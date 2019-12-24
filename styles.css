@@ -1,0 +1,270 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.navbar {
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background: url(images/paper.png) left repeat;
+    width:100%;
+    height: 80px;
+    z-index: 1;
+    border-bottom: 5px solid #202020;
+}
+
+.nav{
+    display: flex;
+    justify-content:right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+.logo{
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+a{
+    margin: 25px;
+    color: #202020;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight:bold;
+    letter-spacing: 3px;
+}
+
+
+
+
+.banner-area{
+    position: relative;
+    width: 100%;
+    height:900px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: auto;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+/*END OF BANNER AND NAV */
+
+/*BEGINNING OF SLIDER PICS THING SHIT TITS */
+
+#slider {
+  overflow: hiddden;
+
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+      left: 0;
+  }
+  20% {
+      left:0;
+  }
+  25% {
+      left:-100%;
+  }
+  45% {
+      left:-100%;
+  }
+  50%{
+      left:-200%;
+  }
+  70%{
+      left:-200%;
+  }
+  75%{
+      left:-300%;
+  }
+  95%{
+      left:-300%;
+  }
+  100%{
+      left:-400%;
+  }
+}
+
+/* END OF SLIDER */
+
+.about-area, .portfolio-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+
+}
+
+.about-area{
+  border-top: 5px solid #202020;
+}
+
+.contact, .resume-area {
+  height:200px;
+}
+
+.text-part{
+    width: 65%;
+    height: 80%;
+}
+
+h1{
+    font-size:50px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+p{
+    font-size: 28px;
+    line-height: 50px;
+}
+
+.about-area{
+    background: url(images/paper.png) left repeat;
+    color: #202020;
+}
+
+.resume-area {
+  background: url(images/paper.png) left repeat;
+  height: 200px;
+  width:100%;
+  text-align: center;
+}
+
+
+
+.portfolio-area, .contact{
+    background:url(images/paper.png) left repeat;
+    color:#202020;
+}
+
+.about-area{
+  color:#202020;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer{
+  height:100px;
+  background: url(images/paper.png) left repeat;
+}
+
+footer, p{
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Button */
+
+
+.btn1, .btn2 {
+  border-radius: 4px;
+  background-color: transparent;
+  border: 3px solid #202020;
+  color: #202020;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#download {
+  font-size: 8px;
+}
+.btnnwrapper {
+  text-align: center;
+}
+
+.contact {
+  text-align:center;
+  padding-top: 100px;
+}
+
+.btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn1:hover span {
+  padding-right: 25px;
+}
+
+.btn1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn2:hover span {
+  padding-right: 25px;
+}
+
+.btn2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
